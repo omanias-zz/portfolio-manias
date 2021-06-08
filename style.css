@@ -1,0 +1,249 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #FFE4C4), color-stop(60%, white));
+  background-image: linear-gradient(to top, #FFE4C4 40%, white 60%);
+}
+
+/* Imagen encabezado */
+.headlog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 1rem;
+}
+
+header img {
+  display: block;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+header img:hover {
+  -webkit-filter: sepia(60%);
+          filter: sepia(60%);
+}
+
+/* Navegación */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+a {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Advent Pro', sans-serif;
+  color: #A52A2A;
+  padding: .5rem;
+}
+
+a:hover {
+  font-size: 2rem;
+  color: #800000;
+}
+
+hr {
+  height: px;
+  background-image: -webkit-gradient(linear, left top, right top, from(red), to(transparent));
+  background-image: linear-gradient(90deg, red, transparent);
+  border: 0;
+  height: px;
+}
+
+/* Reseña */
+#resena {
+  font-size: 1.5rem;
+  font-family: 'Advent Pro', sans-serif;
+  line-height: 3rem;
+  color: #8B4513;
+  text-align: justify;
+}
+
+.imgRes {
+  float: center;
+  padding: 1rem;
+  margin: 2rem;
+  width: 50%;
+}
+
+.imgRes:hover {
+  -webkit-filter: grayscale(75%);
+          filter: grayscale(75%);
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1rem;
+}
+
+footer a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  padding: .5rem;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.btn--linkedin {
+  background-color: transparent;
+}
+
+.btn--github {
+  background-color: transparent;
+}
+
+
+/* Titulos */
+.title {
+  padding: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  color: #800000;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+/* Galeria principal */
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: auto;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 3rem;
+}
+
+.imgpgr{
+  background-color: transparent;
+  border: transparent;
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: 1rem;
+  background-color: transparent;
+  border: transparent;
+  border-radius: .25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1.5rem 2.5em;
+  background-color: transparent;
+  border: none;
+}
+
+/* Párrafos Tecnologías */
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+
+/* Formulario */
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.form-control{
+  text-align: center;
+}
+
+.col-auto {
+  text-align: center;
+  width: 20rem;
+}
+
+.btn-success {
+  margin: 0rem;
+}
+
+.btn-warning {
+  margin: 0rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+/*# sourceMappingURL=style.css.map */
